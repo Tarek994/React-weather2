@@ -7,6 +7,8 @@
 }
 
 .container:before{
+  background: url("./assets2/2942765.jpeg" );
+  background-size: cover;
   content: '';
   position: absolute;
   width: 100%;
