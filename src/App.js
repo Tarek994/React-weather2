@@ -32,15 +32,12 @@ function App() {
         onKeyPress={getWeather}
       />
 
-      {
-        weatherData?.main && <div>
-          <p className="welcome">Welcome to weather app! Enter in a city to get the weather</p>
-        </div>
-      }
+<p className="welcome">Welcome to weather app! Enter in a city to get the weather</p>
+
       <div>
-        {cityName && <p>{cityName}</p>}
-        {cityTemp && <p>{Math.round(cityTemp)}˚F</p>}
-        {cityWeather && <p>{cityWeather}</p>}
+        <div>{cityName && <p>{cityName}</p>}</div>
+        <div>{cityTemp && <p>{Math.round(cityTemp)}˚F</p>}</div>
+        <div>{cityWeather && <p>{cityWeather}</p>}</div>
       </div>
     </div>
   );
