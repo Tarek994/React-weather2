@@ -34,10 +34,10 @@ function App() {
 
 <p className="welcome">Welcome to weather app! Enter in a city to get the weather</p>
 
-      <div>
-        <div>{cityName && <p>{cityName}</p>}</div>
-        <div>{cityTemp && <p>{Math.round(cityTemp)}˚F</p>}</div>
-        <div>{cityWeather && <p>{cityWeather}</p>}</div>
+      <div className="data">
+        {cityName && <div className="phrase">{cityName}</div>}
+        {cityTemp && <div className="phrase">{Math.round(cityTemp)}˚F</div>}
+        {cityWeather && <div className="phrase">{cityWeather}</div>}
       </div>
     </div>
   );
